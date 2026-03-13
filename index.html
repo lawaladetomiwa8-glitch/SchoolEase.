@@ -987,56 +987,87 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
           <div class="form-card">
             <h3>Request a Deployment Consultation</h3>
             <p>Complete the form below and we will reach out to schedule your institutional consultation. All fields marked with an asterisk are required.</p>
-            <form id="consultationForm" novalidate>
-              <div class="form-row">
-                <div class="form-group"><label for="fullName">Full Name *</label><input type="text" id="fullName" placeholder="Your full name" required></div>
-                <div class="form-group"><label for="role">Your Role *</label>
-                  <select id="role" required>
-                    <option value="" disabled selected>Select your role</option>
-                    <option>School Proprietor</option>
-                    <option>School Director</option>
-                    <option>Administrative Head</option>
-                    <option>Principal / Head Teacher</option>
-                    <option>Other Decision Maker</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group"><label for="schoolName">School Name *</label><input type="text" id="schoolName" placeholder="Name of your institution" required></div>
-              <div class="form-row">
-                <div class="form-group"><label for="location">School Location *</label><input type="text" id="location" placeholder="City / State" required></div>
-                <div class="form-group"><label for="studentCount">Approximate Student Count *</label>
-                  <select id="studentCount" required>
-                    <option value="" disabled selected>Select range</option>
-                    <option>100 – 300 students</option>
-                    <option>300 – 750 students</option>
-                    <option>750 – 1,000 students</option>
-                    <option>1,000 – 1,200+ students</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group"><label for="package">Package of Interest</label>
-                <select id="package">
-                  <option value="" disabled selected>Select a package (optional)</option>
-                  <option>Tier 01 — Academic Automation Package</option>
-                  <option>Tier 02 — Workforce & Academic Suite</option>
-                  <option>Tier 03 — Full Institutional Infrastructure</option>
-                  <option>Not sure yet — I need guidance</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" placeholder="info.schoolease@gmail.com" required></div>
-                <div class="form-group"><label for="whatsapp">WhatsApp Number</label><input type="tel" id="whatsapp" placeholder="+234 906 047 9725"></div>
-              </div>
-              <div class="form-group"><label for="message">Additional Context</label><textarea id="message" placeholder="Tell us about your school's current digital tools, pain points, or any questions you have for the consultation..."></textarea></div>
-              <button type="submit" class="btn-primary form-submit">Submit Consultation Request</button>
-              <p class="form-note">We will respond within one business day to confirm your consultation appointment.</p>
-            </form>
-            <div id="form-success">
-              <h4>Request Received</h4>
-              <p>Thank you for submitting your consultation request. We will be in touch within one business day to confirm your appointment.</p>
-            </div>
-          </div>
-        </div>
+<form action="https://formspree.io/f/mreanldr" method="POST">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="role">Your Role *</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select your role</option>
+        <option>School Proprietor</option>
+        <option>School Director</option>
+        <option>Administrative Head</option>
+        <option>Principal / Head Teacher</option>
+        <option>Other Decision Maker</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="schoolName">School Name *</label>
+    <input type="text" id="schoolName" name="schoolName" placeholder="Name of your institution" required>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="location">School Location *</label>
+      <input type="text" id="location" name="location" placeholder="City / State" required>
+    </div>
+
+    <div class="form-group">
+      <label for="studentCount">Approximate Student Count *</label>
+      <select id="studentCount" name="studentCount" required>
+        <option value="" disabled selected>Select range</option>
+        <option>100 – 300 students</option>
+        <option>300 – 750 students</option>
+        <option>750 – 1,000 students</option>
+        <option>1,000 – 1,200+ students</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="package">Package of Interest</label>
+    <select id="package" name="package">
+      <option value="" disabled selected>Select a package (optional)</option>
+      <option>Tier 01 — Academic Automation Package</option>
+      <option>Tier 02 — Workforce & Academic Suite</option>
+      <option>Tier 03 — Full Institutional Infrastructure</option>
+      <option>Not sure yet — I need guidance</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="info.schoolease@gmail.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="whatsapp">WhatsApp Number</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="+234 906 047 9725">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Additional Context</label>
+    <textarea id="message" name="message" placeholder="Tell us about your school's current digital tools, pain points, or any questions you have for the consultation..."></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary form-submit">
+    Submit Consultation Request
+  </button>
+
+  <p class="form-note">
+    We will respond within one business day to confirm your consultation appointment.
+  </p>
+
+</form>
 
       </div>
     </div>
