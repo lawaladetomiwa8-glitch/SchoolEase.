@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPCEtLSBCYWNrZ3JvdW5kIHNxdWFyZSB3aXRoIHNsaWdodCByYWRpdXMgLS0+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMwRDExMTciLz4KCiAgPCEtLSBHb2xkIHRvcC1sZWZ0IGFjY2VudCBiYXIgLS0+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMjAiIGhlaWdodD0iMyIgZmlsbD0iI0I4OTc1QSIvPgoKICA8IS0tICJTIiBsZXR0ZXJmb3JtIOKAlCBib2xkIHNlcmlmLWluc3BpcmVkIHN0cm9rZXMgLS0+CiAgPCEtLSBUb3AgYXJjIG9mIFMgLS0+CiAgPHBhdGggZD0iTTEzIDI2IFExMyAxOSAyMSAxOSBMMjcgMTkgUTMzIDE5IDMzIDI1IFEzMyAzMCAyNyAzMSBMMjEgMzIgUTEzIDMzIDEzIDM5IFExMyA0NiAyMSA0NiBMMjkgNDYgUTM2IDQ2IDM3IDQwIgogICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0I4OTc1QSIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tICJFIiBsZXR0ZXJmb3JtIC0tPgogIDwhLS0gVmVydGljYWwgc3RlbSAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjQxIiB5Mj0iNDYiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gVG9wIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjUzIiB5Mj0iMTkiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gTWlkZGxlIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIzMiIgeDI9IjUxIiB5Mj0iMzIiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIEJvdHRvbSBiYXIgLS0+CiAgPGxpbmUgeDE9IjQxIiB5MT0iNDYiIHgyPSI1MyIgeTI9IjQ2IiBzdHJva2U9IiNENEFGNzIiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBHb2xkIGJvdHRvbS1yaWdodCBhY2NlbnQgZG90IC0tPgogIDxjaXJjbGUgY3g9IjU0IiBjeT0iNTQiIHI9IjMiIGZpbGw9IiNCODk3NUEiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4=">
+  <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPCEtLSBCYWNrZ3JvdW5kIHNxdWFyZSB3aXRoIHNsaWdodCByYWRpdXMgLS0+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMwRDExMTciLz4KCiAgPCEtLSBHb2xkIHRvcC1sZWZ0IGFjY2VudCBiYXIgLS0+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMjAiIGhlaWdodD0iMyIgZmlsbD0iI0I4OTc1QSIvPgoKICA8IS0tICJTIiBsZXR0ZXJmb3JtIOKAlCBib2xkIHNlcmlmLWluc3BpcmVkIHN0cm9rZXMgLS0+CiAgPCEtLSBUb3AgYXJjIG9mIFMgLS0+CiAgPHBhdGggZD0iTTEzIDI2IFExMyAxOSAyMSAxOSBMMjcgMTkgUTMzIDE5IDMzIDI1IFEzMyAzMCAyNyAzMSBMMjEgMzIgUTEzIDMzIDEzIDM5IFExMyA0NiAyMSA0NiBMMjkgNDYgUTM2IDQ2IDM3IDQwIgogICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0I4OTc1QSIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tICJFIiBsZXR0ZXJmb3JtIC0tPgogIDwhLS0gVmVydGljYWwgc3RlbSAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjQxIiB5Mj0iNDYiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gVG9wIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjUzIiB5Mj0iMTkiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gTWlkZGxlIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIzMiIgeDI9IjUxIiB5Mj0iMzIiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIEJvdHRvbSBiYXIgLS0+CiAgPGxpbmUgeDE9IjQxIiB5MT0iNDYiIHgyPSI1MyIgeTI9IjQ2IiBzdHJva2U9IiNENEFGNzIiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBHb2xkIGJvdHRvbS1yaWdodCBhY2NlbnQgZG90IC0tPgogIDxjaXJjbGUgY3g9IjU0IiBjeT0iNTQiIHI9IjMiIGZpbGw9IiNCODk3NUEiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4=">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPCEtLSBCYWNrZ3JvdW5kIHNxdWFyZSB3aXRoIHNsaWdodCByYWRpdXMgLS0+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMwRDExMTciLz4KCiAgPCEtLSBHb2xkIHRvcC1sZWZ0IGFjY2VudCBiYXIgLS0+CiAgPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMjAiIGhlaWdodD0iMyIgZmlsbD0iI0I4OTc1QSIvPgoKICA8IS0tICJTIiBsZXR0ZXJmb3JtIOKAlCBib2xkIHNlcmlmLWluc3BpcmVkIHN0cm9rZXMgLS0+CiAgPCEtLSBUb3AgYXJjIG9mIFMgLS0+CiAgPHBhdGggZD0iTTEzIDI2IFExMyAxOSAyMSAxOSBMMjcgMTkgUTMzIDE5IDMzIDI1IFEzMyAzMCAyNyAzMSBMMjEgMzIgUTEzIDMzIDEzIDM5IFExMyA0NiAyMSA0NiBMMjkgNDYgUTM2IDQ2IDM3IDQwIgogICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0I4OTc1QSIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tICJFIiBsZXR0ZXJmb3JtIC0tPgogIDwhLS0gVmVydGljYWwgc3RlbSAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjQxIiB5Mj0iNDYiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gVG9wIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIxOSIgeDI9IjUzIiB5Mj0iMTkiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gTWlkZGxlIGJhciAtLT4KICA8bGluZSB4MT0iNDEiIHkxPSIzMiIgeDI9IjUxIiB5Mj0iMzIiIHN0cm9rZT0iI0Q0QUY3MiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIEJvdHRvbSBiYXIgLS0+CiAgPGxpbmUgeDE9IjQxIiB5MT0iNDYiIHgyPSI1MyIgeTI9IjQ2IiBzdHJva2U9IiNENEFGNzIiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBHb2xkIGJvdHRvbS1yaWdodCBhY2NlbnQgZG90IC0tPgogIDxjaXJjbGUgY3g9IjU0IiBjeT0iNTQiIHI9IjMiIGZpbGw9IiNCODk3NUEiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4=">
 <title>School Ease Nigeria No. 1 Institutional Digital Infrastructure</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -486,16 +489,16 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
 
 <!-- ═══════════ NAV ═══════════ -->
 <nav>
-  <span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span>
+  <a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span>
   <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a onclick="showPage('home')" data-page="home">Home</a></li>
-    <li><a onclick="showPage('how')" data-page="how">How It Works</a></li>
-    <li><a onclick="showPage('packages')" data-page="packages">Packages</a></li>
-    <li><a onclick="showPage('about')" data-page="about">About</a></li>
-    <li><a onclick="showPage('contact')" data-page="contact" class="nav-cta">Get Started</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('home')" data-page="home">Home</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('how')" data-page="how">How It Works</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('packages')" data-page="packages">Packages</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('about')" data-page="about">About</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('contact')" data-page="contact" class="nav-cta">Get Started</a></li>
   </ul>
 </nav>
 
@@ -592,7 +595,7 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
       <h2>Stop Renting. Start Owning Your School's Digital Infrastructure.</h2>
       <p>Every term spent on subscriptions is a term your institution builds no lasting asset. One investment changes that permanently.</p>
       <div class="cta-btns" style="justify-content:center">
-        <a href="mailto:info.schoolease@gmail.com" class="btn-primary">Request via Email</a>
+        <a href="/cdn-cgi/l/email-protection#056c6b636a2b76666d6a6a6960647660456268646c692b666a68" class="btn-primary">Request via Email</a>
         <a href="https://wa.me/2349060479725" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
       </div>
     </div>
@@ -600,10 +603,10 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand"><span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('how')">How It Works</a></li><li><a onclick="showPage('packages')">Packages</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Packages</h4><ul><li><a onclick="showPage('packages')">Academic Automation</a></li><li><a onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info.schoolease@gmail.com">info.schoolease@gmail.com</a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
+      <div class="footer-brand"><a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li><li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Packages</h4><ul><li><a href="javascript:void(0)" onclick="showPage('packages')">Academic Automation</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#f891969e97d68b9b909797949d998b9db89f95999194d69b9795"><span class="__cf_email__" data-cfemail="224b4c444d0c51414a4d4d4e4743514762454f434b4e0c414d4f">[email&#160;protected]</span></a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 School Ease. All rights reserved.</p><p>Institutional Digital Infrastructure in Nigeria</p></div>
   </footer>
@@ -670,17 +673,17 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
       <h2>Ready to Move From Subscriptions to Ownership?</h2>
       <p>Schedule a consultation and we will scope a deployment plan specific to your institution's size and operational structure.</p>
       <div class="cta-btns" style="justify-content:center">
-        <a href="mailto:info.schoolease@gmail.com" class="btn-primary">Request via Email</a>
+        <a href="/cdn-cgi/l/email-protection#96fff8f0f9b8e5f5fef9f9faf3f7e5f3d6f1fbf7fffab8f5f9fb" class="btn-primary">Request via Email</a>
         <a href="https://wa.me/2349060479725" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
       </div>
     </div>
   </section>
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand"><span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('how')">How It Works</a></li><li><a onclick="showPage('packages')">Packages</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Packages</h4><ul><li><a onclick="showPage('packages')">Academic Automation</a></li><li><a onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info.schoolease@gmail.com">info.schoolease@gmail.com</a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
+      <div class="footer-brand"><a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li><li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Packages</h4><ul><li><a href="javascript:void(0)" onclick="showPage('packages')">Academic Automation</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#f79e999198d984949f98989b92968492b7909a969e9bd994989a"><span class="__cf_email__" data-cfemail="167f7870793865757e79797a7377657356717b777f7a3875797b">[email&#160;protected]</span></a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 School Ease. All rights reserved.</p><p>Institutional Digital Infrastructure in Nigeria</p></div>
   </footer>
@@ -794,17 +797,17 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
       <h2>Stop Paying Rent on Software.<br>Start Building Institutional Assets.</h2>
       <p>Schedule a consultation and we will identify the right package for your school's current stage and future direction.</p>
       <div class="cta-btns" style="justify-content:center">
-        <a href="mailto:info.schoolease@gmail.com" class="btn-primary">Request via Email</a>
+        <a href="/cdn-cgi/l/email-protection#89e0e7efe6a7faeae1e6e6e5ece8faecc9eee4e8e0e5a7eae6e4" class="btn-primary">Request via Email</a>
         <a href="https://wa.me/2349060479725" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
       </div>
     </div>
   </section>
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand"><span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('how')">How It Works</a></li><li><a onclick="showPage('packages')">Packages</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Packages</h4><ul><li><a onclick="showPage('packages')">Academic Automation</a></li><li><a onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info.schoolease@gmail.com">info.schoolease@gmail.com</a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
+      <div class="footer-brand"><a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li><li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Packages</h4><ul><li><a href="javascript:void(0)" onclick="showPage('packages')">Academic Automation</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#01686f676e2f7262696e6e6d6460726441666c60686d2f626e6c"><span class="__cf_email__" data-cfemail="ec85828a83c29f8f84838380898d9f89ac8b818d8580c28f8381">[email&#160;protected]</span></a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 School Ease. All rights reserved.</p><p>Institutional Digital Infrastructure in Nigeria</p></div>
   </footer>
@@ -903,17 +906,17 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
       <h2>Ready to Start the Conversation?</h2>
       <p>The consultation is the first step. No technical knowledge required, just a clear interest in moving your school from subscription dependency to institutional ownership.</p>
       <div class="cta-btns" style="justify-content:center">
-        <a href="mailto:info.schoolease@gmail.com" class="btn-primary">Request via Email</a>
+        <a href="/cdn-cgi/l/email-protection#640d0a020b4a17070c0b0b0801051701240309050d084a070b09" class="btn-primary">Request via Email</a>
         <a href="https://wa.me/2349060479725" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
       </div>
     </div>
   </section>
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand"><span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('how')">How It Works</a></li><li><a onclick="showPage('packages')">Packages</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Packages</h4><ul><li><a onclick="showPage('packages')">Academic Automation</a></li><li><a onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info.schoolease@gmail.com">info.schoolease@gmail.com</a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
+      <div class="footer-brand"><a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li><li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Packages</h4><ul><li><a href="javascript:void(0)" onclick="showPage('packages')">Academic Automation</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#6c05020a03421f0f04030300090d1f092c0b010d0500420f0301"><span class="__cf_email__" data-cfemail="533a3d353c7d20303b3c3c3f3632203613343e323a3f7d303c3e">[email&#160;protected]</span></a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 School Ease. All rights reserved.</p><p>Institutional Digital Infrastructure in Nigeria</p></div>
   </footer>
@@ -936,9 +939,9 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
           <h2>Two Ways to Reach Us Directly</h2>
           <p>Both routes lead to the same outcome — a structured consultation with the School Ease team at a time convenient for your leadership.</p>
           <div class="contact-methods">
-            <a href="mailto:info.schoolease@gmail.com" class="contact-method">
+            <a href="/cdn-cgi/l/email-protection#2a43444c45045949424545464f4b594f6a4d474b434604494547" class="contact-method">
               <div class="method-icon">📩</div>
-              <div class="method-details"><strong>Email</strong><span>info.schoolease@gmail.com</span></div>
+              <div class="method-details"><strong>Email</strong><span><span class="__cf_email__" data-cfemail="0e67606861207d6d666161626b6f7d6b4e69636f6762206d6163">[email&#160;protected]</span></span></div>
             </a>
             <a href="https://wa.me/2349060479725" target="_blank" class="contact-method whatsapp">
               <div class="method-icon">💬</div>
@@ -992,31 +995,67 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
   </section>
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand"><span class="nav-logo" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
-      <div class="footer-col"><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('how')">How It Works</a></li><li><a onclick="showPage('packages')">Packages</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Packages</h4><ul><li><a onclick="showPage('packages')">Academic Automation</a></li><li><a onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:info.schoolease@gmail.com">info.schoolease@gmail.com</a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
+      <div class="footer-brand"><a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span><p>Institutional digital infrastructure for mid-sized private schools in Nigeria. Built to be owned, not rented.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li><li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Packages</h4><ul><li><a href="javascript:void(0)" onclick="showPage('packages')">Academic Automation</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Workforce &amp; Academic</a></li><li><a href="javascript:void(0)" onclick="showPage('packages')">Full Infrastructure</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="/cdn-cgi/l/email-protection#b1d8dfd7de9fc2d2d9dededdd4d0c2d4f1d6dcd0d8dd9fd2dedc"><span class="__cf_email__" data-cfemail="ef86818980c19c8c878080838a8e9c8aaf88828e8683c18c8082">[email&#160;protected]</span></a></li><li><a href="https://wa.me/2349060479725" target="_blank">+234 906 047 9725</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 School Ease. All rights reserved.</p><p>Institutional Digital Infrastructure in Nigeria</p></div>
   </footer>
-</div>
+</div><!-- /page-contact -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ── PAGE ROUTER ──────────────────────────────────────────────────────────────
 function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
-    a.classList.toggle('active', a.dataset.page === id);
-  });
-  document.getElementById('navLinks').classList.remove('open');
+  // Hide all pages
+  var pages = document.querySelectorAll('.page');
+  for (var i = 0; i < pages.length; i++) {
+    pages[i].classList.remove('active');
+  }
+  // Show requested page
+  var target = document.getElementById('page-' + id);
+  if (target) {
+    target.classList.add('active');
+  }
+  // Scroll to top
+  window.scrollTo(0, 0);
+  // Update active nav state
+  var links = document.querySelectorAll('.nav-links a[data-page]');
+  for (var j = 0; j < links.length; j++) {
+    if (links[j].getAttribute('data-page') === id) {
+      links[j].classList.add('active');
+    } else {
+      links[j].classList.remove('active');
+    }
+  }
+  // Close mobile nav
+  var nav = document.getElementById('navLinks');
+  if (nav) nav.classList.remove('open');
+  return false; // prevent any default anchor behaviour
 }
+
+// ── MOBILE NAV ───────────────────────────────────────────────────────────────
 function toggleNav() {
-  document.getElementById('navLinks').classList.toggle('open');
+  var nav = document.getElementById('navLinks');
+  if (nav) nav.classList.toggle('open');
 }
-document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
-  if (a.dataset.page === 'home') a.classList.add('active');
-});
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+(function() {
+  // Set home as active on load
+  var links = document.querySelectorAll('.nav-links a[data-page]');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].getAttribute('data-page') === 'home') {
+      links[i].classList.add('active');
+    }
+  }
+
+  // Make nav-logo also work
+  var logos = document.querySelectorAll('.nav-logo');
+  for (var k = 0; k < logos.length; k++) {
+    logos[k].setAttribute('href', 'javascript:void(0)');
+  }
+})();
 </script>
 </body>
 </html>
