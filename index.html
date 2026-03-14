@@ -1102,49 +1102,44 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
 
 
 <script>
-// ── PAGE ROUTER ──────────────────────────────────────────────────────────────
-function openMail() {
-  var u = 'info.schoolease';
-  var d = 'gmail.com';
-  window.location.href = 'mailto:' + u + '@' + d;
+
+function openMail(){
+  window.location.href = "mailto:info.schoolease@gmail.com";
 }
 
-function showPage(id) {
-  var pages = document.querySelectorAll('.page');
-  for (var i = 0; i < pages.length; i++) {
-    pages[i].classList.remove('active');
-  }
+function showPage(id){
+
+  document.querySelectorAll('.page').forEach(function(page){
+    page.classList.remove('active');
+  });
+
   var target = document.getElementById('page-' + id);
-  if (target) { target.classList.add('active'); }
-  window.scrollTo(0, 0);
-  var navItems = document.querySelectorAll('.nav-links a[data-page]');
-  for (var j = 0; j < navItems.length; j++) {
-    if (navItems[j].getAttribute('data-page') === id) {
-      navItems[j].classList.add('active');
+  if(target){ target.classList.add('active'); }
+
+  window.scrollTo(0,0);
+
+  document.querySelectorAll('.nav-links a[data-page]').forEach(function(link){
+    if(link.dataset.page === id){
+      link.classList.add('active');
     } else {
-      navItems[j].classList.remove('active');
+      link.classList.remove('active');
     }
-  }
+  });
+
   var nav = document.getElementById('navLinks');
-  if (nav) { nav.classList.remove('open'); }
+  if(nav){ nav.classList.remove('open'); }
+
   return false;
 }
 
-// ── MOBILE NAV ────────────────────────────────────────────────────────────────
-function toggleNav() {
+function toggleNav(){
   var nav = document.getElementById('navLinks');
-  if (nav) { nav.classList.toggle('open'); }
+  if(nav){ nav.classList.toggle('open'); }
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
-(function() {
-  var navItems = document.querySelectorAll('.nav-links a[data-page]');
-  for (var i = 0; i < navItems.length; i++) {
-    if (navItems[i].getAttribute('data-page') === 'home') {
-      navItems[i].classList.add('active');
-    }
-  }
-})();
+document.addEventListener("DOMContentLoaded", function(){
+  var homeLink = document.querySelector('.nav-links a[data-page="home"]');
+  if(homeLink){ homeLink.classList.add('active'); }
+});
+
 </script>
-</body>
-</html>
