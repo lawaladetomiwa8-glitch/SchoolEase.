@@ -583,17 +583,28 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
 
 <!-- ═══════════ NAV ═══════════ -->
 <nav>
-  <a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">School<span>Ease</span></span>
+
+  <!-- Logo -->
+  <a class="nav-logo" href="javascript:void(0)" onclick="showPage('home')">
+    School<span>Ease</span>
+  </a>
+
+  <!-- Hamburger Menu -->
   <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-    <span></span><span></span><span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </button>
+
+  <!-- Links -->
   <ul class="nav-links" id="navLinks">
-    <li><a href="javascript:void(0)" onclick="showPage('home')" data-page="home">Home</a></li>
-    <li><a href="javascript:void(0)" onclick="showPage('how')" data-page="how">How It Works</a></li>
-    <li><a href="javascript:void(0)" onclick="showPage('packages')" data-page="packages">Packages</a></li>
-    <li><a href="javascript:void(0)" onclick="showPage('about')" data-page="about">About</a></li>
-    <li><a href="javascript:void(0)" onclick="showPage('contact')" data-page="contact" class="nav-cta">Get Started</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('how')">How It Works</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('packages')">Packages</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li>
+    <li><a href="javascript:void(0)" onclick="showPage('contact')" class="nav-cta">Get Started</a></li>
   </ul>
+
 </nav>
 
 <!-- PAGE: HOME -->
